@@ -28,7 +28,7 @@ jobs:
 
     - name: Terraform Init & Apply
       run: |
-        cd terraform/terraform
+        cd terraform
         terraform init
         terraform apply -auto-approve \
           -var="aws_region=${{ secrets.AWS_REGION }}" \
